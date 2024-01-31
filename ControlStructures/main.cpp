@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main()
+void main()
 {
 	setlocale(LC_ALL, "");
 	cout << "Hello Controls" << endl;
