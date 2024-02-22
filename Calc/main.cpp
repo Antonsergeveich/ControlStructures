@@ -1,12 +1,12 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 
 void main()
 {
 	setlocale(LC_ALL, "");
-	double a, b; //числа вводимые с клавиатуры
-	char s;  //s- Sign (знак операции)
-	cout << "Введите выражение; ";
+	double a, b; //С‡РёСЃР»Р° РІРІРѕРґРёРјС‹Рµ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹
+	char s;  //s- Sign (Р·РЅР°Рє РѕРїРµСЂР°С†РёРё)
+	cout << "Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ; ";
 	cin >> a >> s >> b;
 	cout << a << s << b << endl;
 	switch (s)
