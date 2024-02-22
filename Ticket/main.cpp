@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 void main()
@@ -6,9 +6,9 @@ void main()
 	setlocale(LC_ALL, "");
 	/*int number, left, right;
 	int a, b, c, d, f, g;
-	cout << "Ââåäèòå íîìåð áèëåòà: " <<endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð±Ð¸Ð»ÐµÑ‚Ð°: " <<endl;
 	cin >> number;
-	cout << "Íîìåð Âàøåãî áèëåòà: " << number << endl;
+	cout << "ÐÐ¾Ð¼ÐµÑ€ Ð’Ð°ÑˆÐµÐ³Ð¾ Ð±Ð¸Ð»ÐµÑ‚Ð°: " << number << endl;
 	left = number / 1000;
 	right = number % 1000;
 	a = left / 100; b = (left/10)%10; c = left % 10; d = right / 100; f = (right / 10)%10; g = right % 10;
@@ -16,11 +16,11 @@ void main()
 	right = d + f + g;
 	if (left == right)
 	{
-		cout << "Ó Âàñ ñ÷àñòëèâûé áèëåò" << endl;
+		cout << "Ð£ Ð’Ð°Ñ ÑÑ‡Ð°ÑÑ‚Ð»Ð¸Ð²Ñ‹Ð¹ Ð±Ð¸Ð»ÐµÑ‚" << endl;
 	}
 	else
 	{
-		cout << "Ó Âàñ îáû÷íûé áèëåò" << endl;
+		cout << "Ð£ Ð’Ð°Ñ Ð¾Ð±Ñ‹Ñ‡Ð½Ñ‹Ð¹ Ð±Ð¸Ð»ÐµÑ‚" << endl;
 	}
 	*/
 	
@@ -28,7 +28,7 @@ void main()
 	int number;
 	int sum1, sum2;
 	sum1 = sum2 = 0;
-	cout << "Ââåäèòå íîìåð àâòîáóñíîãî áèëåòà: "; cin >> number;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð°Ð²Ñ‚Ð¾Ð±ÑƒÑÐ½Ð¾Ð³Ð¾ Ð±Ð¸Ð»ÐµÑ‚Ð°: "; cin >> number;
 	while (number > 1000)
 	{
 		sum1 += number % 10;
