@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include <conio.h>
 using namespace std;
 using std::cin;
@@ -24,10 +24,10 @@ void main()
 {
 	setlocale(LC_ALL, "");
 	cout << endl;
-	cout << "\t\t\t\t\t\tÔèãóðû" << endl;
+	cout << "\t\t\t\t\t\tÐ¤Ð¸Ð³ÑƒÑ€Ñ‹" << endl;
 	cout << endl;
 	//int n;
-	//cout << "Ââåäèòå êîëè÷åñòâî çâ¸çäî÷åê: "; cin >> n;
+	//cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð·Ð²Ñ‘Ð·Ð´Ð¾Ñ‡ÐµÐº: "; cin >> n;
 #ifdef SQUARE
 	for (int i = 0; i < n; i++)
 	{
@@ -203,7 +203,7 @@ void main()
 #endif // PLUS_MINUS_2
 #ifdef RAZMER_DOSKI
 	int n = 0; int y = 223; int x = 220; int w = 218; int a = 191; int p = 179; int b = 196; int v = 192; int q = 217;
-	cout << "Ââåäèòå ðàçìåð äîñêè: "; cin >> n; cout << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð´Ð¾ÑÐºÐ¸: "; cin >> n; cout << endl;
 	setlocale(LC_ALL, "C");
 
 	cout << (char)w;
@@ -247,7 +247,7 @@ void main()
 	///////////////////////////////////
 #ifdef HARD_CHESS
 	int n;
-	cout << "Ââåäèòå ðàçìåð äîñêè: "; cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð´Ð¾ÑÐºÐ¸: "; cin >> n;
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; j < n; j++)
@@ -268,7 +268,7 @@ void main()
 	
 	int i, j, k;
 	int numbers, lines;
-	cout << "Ââåäèòå ñêîëüêî áóäåò ðÿäîâ: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐºÐ¾Ð»ÑŒÐºÐ¾ Ð±ÑƒÐ´ÐµÑ‚ Ñ€ÑÐ´Ð¾Ð²: ";
 	cin >> lines; cout << endl;
 	for (i = 0; i < lines; i++)
 	{
