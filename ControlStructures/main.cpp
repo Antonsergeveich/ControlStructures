@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 void main()
@@ -7,16 +7,16 @@ void main()
 	cout << "Hello Controls" << endl;
 #ifdef ONE
 	int temperature;
-	cout << "Ââåäèòå òåìïåðàòóðó âîçäóõà:";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ñƒ Ð²Ð¾Ð·Ð´ÑƒÑ…Ð°:";
 	cin >> temperature;
-	cout << "Òåìïåðàòóðà âîçäóõà:" << temperature << "ãðàäóñîâ\n";
+	cout << "Ð¢ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð° Ð²Ð¾Ð·Ð´ÑƒÑ…Ð°:" << temperature << "Ð³Ñ€Ð°Ð´ÑƒÑÐ¾Ð²\n";
 	if (temperature > 70)
 	{
-		cout << "Âû íà äðóãîé ïëàíåòå" << endl;
+		cout << "Ð’Ñ‹ Ð½Ð° Ð´Ñ€ÑƒÐ³Ð¾Ð¹ Ð¿Ð»Ð°Ð½ÐµÑ‚Ðµ" << endl;
 	}
 	else if (temperature > 40)
 	{
-		cout << "Âû â ïóñòûíå" << endl;
+		cout << "Ð’Ñ‹ Ð² Ð¿ÑƒÑÑ‚Ñ‹Ð½Ðµ" << endl;
 	}*/
 
 	bool b = double(1 / 2);
@@ -25,29 +25,29 @@ void main()
 #endif
 #ifdef TEMPERATURE2
 	int temperature;
-	cout << "Ââåäèòå òåìïåðàòóðó âîçäóõà" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ñƒ Ð²Ð¾Ð·Ð´ÑƒÑ…Ð°" << endl;
 	cin >> temperature;
-	cout << "Òåìïåðàòóðà âîçäóõà:" << temperature << endl;
+	cout << "Ð¢ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð° Ð²Ð¾Ð·Ð´ÑƒÑ…Ð°:" << temperature << endl;
 	if (abs(temperature) % 100 > 10 && abs(temperature) % 100 < 20)
 	{
-		cout << "ãðàäóñîâ";
+		cout << "Ð³Ñ€Ð°Ð´ÑƒÑÐ¾Ð²";
 	}
 	else if (abs(temperature) % 10 == 1)
 	{
-		cout << "ãðàäóñ";
+		cout << "Ð³Ñ€Ð°Ð´ÑƒÑ";
 	}
 	else if (abs(temperature) % 10 >= 5 || abs(temperature) % 10 == 0)
 	{
-		cout << "ãðàäóñîâ";
+		cout << "Ð³Ñ€Ð°Ð´ÑƒÑÐ¾Ð²";
 	}
-	else cout << "ãðàäóñà\n";
+	else cout << "Ð³Ñ€Ð°Ð´ÑƒÑÐ°\n";
 	cout << endl;
 #endif
 #ifdef CALC_1
 
 	double a, b;
 	char s;
-	cout << "ââåäèòå âûðàæåíèå:";
+	cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ:";
 	cin >> a >> s >> b;
 	cout << a << s << b << endl;
 	if (s == '+')
@@ -70,7 +70,7 @@ void main()
 	//#ifdef CALC_2
 	double a, b;
 	char s;
-	cout << "ââåäèòå âûðàæåíèå: ";
+	cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ: ";
 	cin >> a >> s >> b;
 	switch (s)
 	{
