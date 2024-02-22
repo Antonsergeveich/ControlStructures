@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 //#define BITWISE_COMPARISON
 //#define BITWISE_COMPARISON_2
@@ -11,9 +11,9 @@ void main()
 
 #ifdef BITWISE_COMPARISON
 	int i = 0, j = 0;
-	cout << "Ââåäèòå ïåðâóþ ïåðåìåííóþ: "; cin >> i;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿ÐµÑ€Ð²ÑƒÑŽ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½ÑƒÑŽ: "; cin >> i;
 	cout << endl;
-	cout << "Ââåäèòå âòîðóþ ïåðåìåííóþ: "; cin >> j;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‚Ð¾Ñ€ÑƒÑŽ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½ÑƒÑŽ: "; cin >> j;
 	cout << endl;
 	cout << "\t" << i << "\t" << j;
 	cout << endl;
@@ -25,7 +25,7 @@ void main()
 #endif 
 #ifdef HARD_CHES
 	int n;
-	cout << "Ââåäèòå ðàçìåð äîñêè: "; cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð´Ð¾ÑÐºÐ¸: "; cin >> n;
 	for (int i = 0; i < n*n; i++)
 	{
 		for (int j = 0; j < n*n; j++)
@@ -42,7 +42,7 @@ void main()
 #ifdef PASCAL_IS_TRIANGLE
 	int i, j, k;
 	int numbers, lines;
-	cout << "Ââåäèòå ñêîëüêî áóäåò ðÿäîâ: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐºÐ¾Ð»ÑŒÐºÐ¾ Ð±ÑƒÐ´ÐµÑ‚ Ñ€ÑÐ´Ð¾Ð²: ";
 	cin >> lines; cout << endl;
 	for (i = 0; i < lines; i++)
 	{
