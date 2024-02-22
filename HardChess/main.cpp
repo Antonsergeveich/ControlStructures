@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 //#define HARD_CHESS_1
 //#define HARD_CHESS_2
@@ -7,7 +7,7 @@ void main()
 {
 	setlocale(LC_ALL, "");
 		int n;
-	cout << "Ââåäèòå ðàçìåð äîñêè: "; cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð´Ð¾ÑÐºÐ¸: "; cin >> n;
 #ifdef HARD_CESS_1
 	for (int i = 0; i < n; i++)
 	{
