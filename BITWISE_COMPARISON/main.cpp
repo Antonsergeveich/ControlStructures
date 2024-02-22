@@ -3,7 +3,8 @@ using namespace std;
 //#define BITWISE_COMPARISON
 //#define BITWISE_COMPARISON_2
 //#define HARD_CHES
-//#define PASCAL_IS_TRIANGLE
+//#define BITWISE_COMPARISON_3
+#define PASCAL_IS_TRIANGLE
 void main()
 {
     setlocale(LC_ALL, "");
@@ -68,9 +69,11 @@ void main()
 	a ^= b;
 	cout << a << "\t" << b << endl;
 #endif // BITWISE_COMPARISON_2
+#ifdef BITWISE_COMPARISON_3
 	int a = 2;
 	int b = 3;
 	cout << a << "\t" << b << endl;
 	b ^= a ^= b ^= a;
 	cout << a << "\t" << b << endl;
+#endif // BITWISE_COMPARISON_3
 }

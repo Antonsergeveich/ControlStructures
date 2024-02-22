@@ -67,7 +67,7 @@ void main()
 		cout << a << "/" << b << "=" << a / b << endl;
 	}
 #endif
-	#ifdef CALC_2
+	//#ifdef CALC_2
 	double a, b;
 	char s;
 	cout << "введите выражение: ";
@@ -82,7 +82,7 @@ void main()
 	}
 
 
-	#endif
+	//#endif
 
 
 }
