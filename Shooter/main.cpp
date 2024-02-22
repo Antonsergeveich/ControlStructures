@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<conio.h>
 using namespace std;
 
@@ -13,32 +13,32 @@ void main()
 {
 	setlocale(LC_ALL, "");
 	/*char  symbol;
-	cout << "Íàæìèòå íà êëàâèàòóðå îäíó èç êëàâèø óêàçàííûõ â ñïèñêå: " << endl;
+	cout << "ÐÐ°Ð¶Ð¼Ð¸Ñ‚Ðµ Ð½Ð° ÐºÐ»Ð°Ð²Ð¸Ð°Ñ‚ÑƒÑ€Ðµ Ð¾Ð´Ð½Ñƒ Ð¸Ð· ÐºÐ»Ð°Ð²Ð¸Ñˆ ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ñ‹Ñ… Ð² ÑÐ¿Ð¸ÑÐºÐµ: " << endl;
 	cout << "w, s, a, d, Space, Enter, Escape" << endl;
 
 	symbol = _getch();
 
 		if (symbol == 32)
 		{
-			cout << "Ïðûæîê";
+			cout << "ÐŸÑ€Ñ‹Ð¶Ð¾Ðº";
 		}
 		else if (symbol == 13)
 		{
-			cout << "Îãîíü";
+			cout << "ÐžÐ³Ð¾Ð½ÑŒ";
 		}
 		else if (symbol == 27)
 		{
-			cout << "Âûõîä";
+			cout << "Ð’Ñ‹Ñ…Ð¾Ð´";
 		}
 		else
 		{
 			switch (symbol)
 			{
-			case 'w':cout << "Âïåð¸ä" << endl; break;
-			case 's':cout << "Íàçàä" << endl; break;
-			case 'a':cout << "Âëåâî" << endl; break;
-			case 'd':cout << "Âïðàâî" << endl; break;
-			default:cout << "×òî òî ïîøëî íå òàê" << endl;
+			case 'w':cout << "Ð’Ð¿ÐµÑ€Ñ‘Ð´" << endl; break;
+			case 's':cout << "ÐÐ°Ð·Ð°Ð´" << endl; break;
+			case 'a':cout << "Ð’Ð»ÐµÐ²Ð¾" << endl; break;
+			case 'd':cout << "Ð’Ð¿Ñ€Ð°Ð²Ð¾" << endl; break;
+			default:cout << "Ð§Ñ‚Ð¾ Ñ‚Ð¾ Ð¿Ð¾ÑˆÐ»Ð¾ Ð½Ðµ Ñ‚Ð°Ðº" << endl;
 			}
 		}*/
 	char key;
@@ -47,23 +47,23 @@ void main()
 		key = _getch();
 		//cout << (int)key << "\t" << key << endl;
 	
-	/*if (key == 'w' || key == 'W' || key == UP_ARROW)cout << "Âïåð¸ä" << endl;
-	else if (key == 's' || key == 'S' || key == DOWN_ARROW)cout << "Íàçàä" << endl;
-	else if (key == 'a' || key == 'A' || key == LEFT_ARROW) cout << "Âëåâî" << endl;
-	else if (key == 'd' || key == 'D' || key == RIGHT_ARROW)cout << "Âïðàâî" << endl;
-	else if (key == ' ')cout << "Ïðûæîê" << endl;
-	else if (key == 13) cout << "Îãîíü" << endl;
+	/*if (key == 'w' || key == 'W' || key == UP_ARROW)cout << "Ð’Ð¿ÐµÑ€Ñ‘Ð´" << endl;
+	else if (key == 's' || key == 'S' || key == DOWN_ARROW)cout << "ÐÐ°Ð·Ð°Ð´" << endl;
+	else if (key == 'a' || key == 'A' || key == LEFT_ARROW) cout << "Ð’Ð»ÐµÐ²Ð¾" << endl;
+	else if (key == 'd' || key == 'D' || key == RIGHT_ARROW)cout << "Ð’Ð¿Ñ€Ð°Ð²Ð¾" << endl;
+	else if (key == ' ')cout << "ÐŸÑ€Ñ‹Ð¶Ð¾Ðº" << endl;
+	else if (key == 13) cout << "ÐžÐ³Ð¾Ð½ÑŒ" << endl;
 	else if (key != 27 && key != -32) cout << "Error" << endl;*/
 		
 		switch (key)
 		{
-		case 'w' : case 'W' : case UP_ARROW :   cout << "Âïåðåä" << endl; break;
-		case 's' : case 'S' : case DOWN_ARROW :   cout << "Íàçàä" << endl; break;
-		case 'a' : case 'A' : case LEFT_ARROW:   cout << "Âëåâî" << endl; break;
-		case 'd' : case 'D' : case RIGHT_ARROW :   cout << "Âïðàâî" << endl; break;
-		case ' ': cout << "Ïðûæîê" << endl; break;
-		case 13: cout << "Îãîíü" << endl; break;
-		case Escape:cout << "Âûõîä" << endl;
+		case 'w' : case 'W' : case UP_ARROW :   cout << "Ð’Ð¿ÐµÑ€ÐµÐ´" << endl; break;
+		case 's' : case 'S' : case DOWN_ARROW :   cout << "ÐÐ°Ð·Ð°Ð´" << endl; break;
+		case 'a' : case 'A' : case LEFT_ARROW:   cout << "Ð’Ð»ÐµÐ²Ð¾" << endl; break;
+		case 'd' : case 'D' : case RIGHT_ARROW :   cout << "Ð’Ð¿Ñ€Ð°Ð²Ð¾" << endl; break;
+		case ' ': cout << "ÐŸÑ€Ñ‹Ð¶Ð¾Ðº" << endl; break;
+		case 13: cout << "ÐžÐ³Ð¾Ð½ÑŒ" << endl; break;
+		case Escape:cout << "Ð’Ñ‹Ñ…Ð¾Ð´" << endl;
 		case -32: break;
 		default: cout << "Error" << endl;
 	    }
