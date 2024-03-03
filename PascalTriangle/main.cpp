@@ -42,5 +42,25 @@ void main()
 			cout << nf / mf / mnf;
 		}
 		cout << endl;
+#ifdef PASCAL_IS_TRIANGLE
+		int i, j, k;
+		int numbers, lines;
+		cout << "Введите сколько будет рядов: ";
+		cin >> lines; cout << endl;
+		for (i = 0; i < lines; i++)
+		{
+			numbers = 1;
+			for (j = 0; j < lines - 1 - i; j++)
+			{
+				cout << "  ";
+			}
+			for (k = 0; k <= i; k++)
+			{
+				cout << numbers << "   ";
+				numbers = numbers * (i - k) / (k + 1);
+			}
+			cout << endl << endl;
+		}
+#endif 
 	}
 }

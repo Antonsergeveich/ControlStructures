@@ -4,7 +4,7 @@ using namespace std;
 //#define BITWISE_COMPARISON_2
 //#define HARD_CHES
 //#define BITWISE_COMPARISON_3
-#define PASCAL_IS_TRIANGLE
+#define BC
 void main()
 {
     setlocale(LC_ALL, "");
@@ -39,26 +39,17 @@ void main()
 			cout << endl;
 	}
 #endif 
-#ifdef PASCAL_IS_TRIANGLE
-	int i, j, k;
-	int numbers, lines;
-	cout << "Введите сколько будет рядов: ";
-	cin >> lines; cout << endl;
-	for (i = 0; i < lines; i++)
-	{
-		numbers = 1;
-		for (j = 0; j < lines - 1 - i; j++)
-		{
-			cout << "  ";
-		}
-		for (k = 0; k <= i; k++)
-		{
-			cout << numbers << "   ";
-			numbers = numbers * (i - k) / (k + 1);
-		}
-		cout << endl << endl;
-	}
-#endif 
+#ifdef BC
+	int i, x = 0;
+	cout << "Введите значение: ";  cin >> i;
+	x = i & 1;
+	cout << (x == 0 ? "Чётное" : "Не чётное");
+	cout << endl;
+	cout << (128 & 1); // AND на чётность, если побитово одно число умножить на один 1 и результат будет 1 то число не чётное, если ноль 0 то число чётное
+	cout << endl;
+	cout << (123 ^ 123); // XOR на равенство чисел, равны числа или нет, если XOR двух чисел равно нулю то числа равны, если  единицы 1 то не равны   
+#endif // BC
+
 
 #ifdef BITWISE_COMPARISON_2
 	int a = 2;
@@ -76,4 +67,5 @@ void main()
 	b ^= a ^= b ^= a;
 	cout << a << "\t" << b << endl;
 #endif // BITWISE_COMPARISON_3
+	
 }
