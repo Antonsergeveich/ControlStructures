@@ -4,7 +4,9 @@ using namespace std;
 //#define BITWISE_COMPARISON_2
 //#define HARD_CHES
 //#define BITWISE_COMPARISON_3
-//#define BC
+//#define AND_XOR
+#define SHIFT
+
 void main()
 {
     setlocale(LC_ALL, "");
@@ -39,7 +41,7 @@ void main()
 			cout << endl;
 	}
 #endif 
-#ifdef BC
+#ifdef AND_XOR
 	int i, x = 0;
 	cout << "Введите значение: ";  cin >> i;
 	x = i & 1;
@@ -48,7 +50,7 @@ void main()
 	cout << (128 & 1); // AND на чётность, если побитово одно число умножить на один 1 и результат будет 1 то число не чётное, если ноль 0 то число чётное
 	cout << endl;
 	cout << (123 ^ 123); // XOR на равенство чисел, равны числа или нет, если XOR двух чисел равно нулю то числа равны, если  единицы 1 то не равны   
-#endif // BC///
+#endif 
 
 
 #ifdef BITWISE_COMPARISON_2
@@ -68,10 +70,13 @@ void main()
 	cout << a << "\t" << b << endl;
 #endif // BITWISE_COMPARISON_3
 
+#ifdef SHIFT
 	int i, n, y, x = 0;
 	cout << "Введите значение: ";  cin >> i; cout << endl;
 	cout << "На сколько сдвинуть битов: "; cin >> n; cout << endl;
-	y = i >> n; cout <<"Вправо: "<< y << endl; // побитовый сдвиг вправо на 1 бит это деление числа на 2
-	x = i << n; cout <<"Влево: " << x << endl; // побитовый сдвиг влево на 1 бит это умножение числа на 2
-	// побитовые операции применимы только к целочисленным типам данных, к вещественным они НЕ применимы
+	y = i >> n; cout << "Вправо: " << y << endl; // побитовый сдвиг вправо на 1 бит это деление числа на 2
+	x = i << n; cout << "Влево: " << x << endl; // побитовый сдвиг влево на 1 бит это умножение числа на 2
+	// побитовые операции применимы только к целочисленным типам данных, к вещественным они НЕ применимы  
+#endif // SHIFT
+
 }
