@@ -14,7 +14,7 @@ using std::endl;
 //#define FIBONACHI_3
 //#define FIBONACHI_4_HARD
 //#define CHISLA
-#define CHISLA_2
+//#define CHISLA_2
 //#define MULTIPLICATION_TABLE
 //#define PYTHAGOREAN_TABLE
 void main()

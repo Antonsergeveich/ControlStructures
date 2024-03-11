@@ -4,7 +4,7 @@ using namespace std;
 //#define BITWISE_COMPARISON_2
 //#define HARD_CHES
 //#define BITWISE_COMPARISON_3
-#define BC
+//#define BC
 void main()
 {
     setlocale(LC_ALL, "");
@@ -67,5 +67,11 @@ void main()
 	b ^= a ^= b ^= a;
 	cout << a << "\t" << b << endl;
 #endif // BITWISE_COMPARISON_3
-	
+
+	int i, n, y, x = 0;
+	cout << "Введите значение: ";  cin >> i; cout << endl;
+	cout << "На сколько сдвинуть битов: "; cin >> n; cout << endl;
+	y = i >> n; cout <<"Вправо: "<< y << endl; // побитовый сдвиг вправо на 1 бит это деление числа на 2
+	x = i << n; cout <<"Влево: " << x << endl; // побитовый сдвиг влево на 1 бит это умножение числа на 2
+	// побитовые операции применимы только к целочисленным типам данных, к вещественным они НЕ применимы
 }
