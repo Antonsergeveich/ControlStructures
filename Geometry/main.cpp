@@ -83,7 +83,6 @@ void main()
 		cout << endl;
 	}
 #endif // TRIANGLE
-
 #ifdef TRIANGLE_4
 	cout << endl;
 	for (int i = 0; i < n; i++)
@@ -108,7 +107,6 @@ void main()
 		cout << endl;
 	}
 #endif 
-
 #ifdef ROMBUS
 	for (int i = 0; i < n; i++)
 	{
@@ -153,8 +151,6 @@ void main()
 		for (int j = i; j < n - 1; j++)cout << "  "; cout << "/";
 		cout << endl;
 	}
-
-
 #endif 
 #ifdef ROMBUS_2
 	for (int i = 0; i < n; i++)
@@ -170,7 +166,6 @@ void main()
 		cout << endl;
 	}
 #endif 
-
 #ifdef PLUS_MINUS
 	char w = '-', s = '+';
 	for (int i = 0; i < 3; i++)
@@ -265,7 +260,6 @@ void main()
 #endif 
 	/////////////////////////////
 #ifdef PASCAL_IS_TRIANGLE
-	
 	int i, j, k;
 	int numbers, lines;
 	cout << "Введите сколько будет рядов: ";
@@ -284,9 +278,5 @@ void main()
 		}
 		cout << endl << endl;
 	}
-
 #endif 
-
-
-
 }
