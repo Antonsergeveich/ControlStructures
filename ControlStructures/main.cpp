@@ -1,11 +1,15 @@
 ﻿#include<iostream>
 using namespace std;
 
+//#define TEMPERATURE
+//#define TEMPERATURE_1
+//#define CALC
+//#define CALC_1
 void main()
 {
 	setlocale(LC_ALL, "");
 	cout << "Hello Controls" << endl;
-#ifdef ONE
+#ifdef TEMPERATURE
 	int temperature;
 	cout << "Введите температуру воздуха:";
 	cin >> temperature;
@@ -17,13 +21,11 @@ void main()
 	else if (temperature > 40)
 	{
 		cout << "Вы в пустыне" << endl;
-	}*/
-
+	}
 	bool b = double(1 / 2);
 	cout << b;
-	return 0;
 #endif
-#ifdef TEMPERATURE2
+#ifdef TEMPERATURE_1
 	int temperature;
 	cout << "Введите температуру воздуха" << endl;
 	cin >> temperature;
@@ -43,8 +45,7 @@ void main()
 	else cout << "градуса\n";
 	cout << endl;
 #endif
-#ifdef CALC_1
-
+#ifdef CALC
 	double a, b;
 	char s;
 	cout << "введите выражение:";
@@ -67,7 +68,7 @@ void main()
 		cout << a << "/" << b << "=" << a / b << endl;
 	}
 #endif
-	//#ifdef CALC_2
+	#ifdef CALC_1
 	double a, b;
 	char s;
 	cout << "введите выражение: ";
@@ -80,9 +81,5 @@ void main()
 	case  '/':cout << a << " / " << b << " = " << a / b << endl; break;
 	default: cout << "Error: no operation" << endl;
 	}
-
-
-	//#endif
-
-
+	#endif
 }
