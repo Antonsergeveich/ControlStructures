@@ -1,14 +1,13 @@
 ﻿#include<iostream>
 using namespace std;
 //#define HARD_CHESS_1
-//#define HARD_CHESS_2
-#define BITWISE_COMPARISON
+#define HARD_CHESS_2
 void main()
 {
 	setlocale(LC_ALL, "");
-		int n;
+	int n;
 	cout << "Введите размер доски: "; cin >> n;
-#ifdef HARD_CESS_1
+#ifdef HARD_CHESS_1
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; j < n; j++)
@@ -20,7 +19,7 @@ void main()
 					cout << (i % 2 == k % 2 ? "* " : "  ");
 				}
 			}
-			cout << endl;
+		cout << endl;
 		}
 	}
 #endif 
@@ -33,13 +32,8 @@ void main()
 			//cout << ((i / n & 1) == (j / n & 1) ? "* " : "  ");
 			//cout << ((i / n+j/n) % 2  ? "* " : "  ");
 			//cout << ((i / n) % 2 == (j / n) % 2 ? "* " : "  ");
-			
 		}
-			cout << endl;
+		cout << endl;
 	}
 #endif 
-#ifdef BITWISE_COMPARISON
-
-#endif // BITWISE_COMPARISON
-
 }
