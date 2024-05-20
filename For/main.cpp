@@ -3,30 +3,46 @@ using namespace std;
 using std::cin;
 using std::cout;
 using std::endl;
+//#define FOR_BASICS
 //#define FOR
 //#define FACTORIAL
-//#define FACTORIAL_2
-//#define STEPEN
-//#define STEPEN_2
+//#define FACTORIAL_1
+//#define POWER
+//#define POWER_1
 //#define ASCII
 //#define FIBONACHI
+//#define FIBONACHI_1
 //#define FIBONACHI_2
-//#define FIBONACHI_3
-//#define FIBONACHI_4_HARD
-//#define CHISLA
-//#define CHISLA_2
-//#define MULTIPLICATION_TABLE
+//#define FIBONACHI_3_HARD
+//#define SIMPLE_NUMBERS
+//#define SIMPLE_NUMBERS_1
+#define MULTIPLICATION_TABLE
 //#define PYTHAGOREAN_TABLE
 void main()
 {
 	setlocale(LC_ALL, "");
+#ifdef FOR_BASICS
+	//int i = 0;	//Счетчик цикла
+	//int n;
+	//cout << "Введите количество итераций: "; cin >> n;
+	//while (i < n)
+	//{
+	//	cout << i << " Hello" << endl;;
+	//	i++;
+	//}
+
+	;	//Счетчик цикла
+	int n;
+	cout << "Введите количество итераций: "; cin >> n;
+	for (int i = 0; i < n; i++)
+	{
+		cout << i << "Hello" << endl;;
+		;
+	}
+#endif // FOR_BASICS
 #ifdef FOR
 	int n = 5;
-	for (
-		int i = 0;
-		i < n;
-		i++
-		)
+	for (int i = 0;i < n;i++)
 	{
 		cout << i << "\t";
 	}
@@ -59,7 +75,7 @@ void main()
 		cout << "Факториал числа:  " << "!" << n << " = " << x << endl;
 	}
 #endif
-#ifdef FACTORIAL_2
+#ifdef FACTORIAL_1
 	int n;
 	cout << "Введите число для вычисления факториала: "; cin >> n;
 	int f = 1; //Факториал
@@ -71,7 +87,7 @@ void main()
 	}
 	cout << endl;
 #endif 
-#ifdef STEPEN_2
+#ifdef POWER
 	double a; //Основание степени
 	int n; //показатель степени
 	double N = 1; //степень
@@ -88,7 +104,7 @@ void main()
 	}
 	cout << N << endl;
 #endif 
-#ifdef STEPEN
+#ifdef POWER_1
 	cout << endl;
 	cout << "\t\t\t\t\tВозводим число в степень." << endl;
 	cout << endl;
@@ -140,7 +156,7 @@ void main()
 	}
 	cout << endl;
 #endif
-#ifdef FIBONACHI_2
+#ifdef FIBONACHI_1
 	cout << endl;
 	cout << "\t\t\t\tВыводим на экран заданное количество членов ряда Фибоначчи."; cout << endl;
 	cout << endl;
@@ -166,16 +182,18 @@ void main()
 	}
 	cout << endl;
 #endif
-#ifdef FIBONACHI_3
+#ifdef FIBONACHI_2
 	int n;
 	cout << "Введите предельное число:"; cin >> n;
 	for (int a = 0, b = 1, c = a + b; a < n; a = b, b = c, c = a + b)
+		//Оператор "запятая" (coma operator) - позволяет в том месте где ожидается одно выражение написать несколько выражений.
+		//Эти выражения будут выполняться последовательно слева направо, и оператор "запятая" вернет значение последнего выражения.
 	{
 		cout << a << "\t";
 	}
 	cout << endl;
 #endif 
-#ifdef FIBONACHI_4_HARD
+#ifdef FIBONACHI_3_HARD
 	int n;
 	cout << "Введите предельное число: "; cin >> n;
 	for (int i = 0, b = 1; i <= n; i = i + b, b = i + b)
@@ -184,7 +202,7 @@ void main()
 	}
 #endif 
 	//c = ( a = b ) + ( b = c )
-#ifdef CHISLA
+#ifdef SIMPLE_NUMBERS
 	cout << endl;
 	cout << "\t\t\t\tРяд простых чисел до указанного предела.";
 	cout << endl;
@@ -198,7 +216,7 @@ void main()
 	}
 	cout << endl;
 #endif
-#ifdef CHISLA_2
+#ifdef SIMPLE_NUMBERS_1
 	int n;
 	cout << "Введите предел: "; cin >> n;
 	for (int i = 0; i <= n; i++)
@@ -221,12 +239,11 @@ void main()
 			cout << endl;
 			cout << "\t\t\t\t\t\tТаблица умножения.";
 			cout << endl;
-			int i,x;
-			for (i = 1; i <= 10; i++)
+			for (int i = 1; i <= 10; i++)
 			{
-				for (x = 1; x <= 10; x++)
+				for (int j = 1; j <= 10; j++)
 				{
-					cout << " "<< i << " * " << x << " = " << i * x << " ";
+					cout << " "<< i << " * " << j << " = " << i * j << " ";
 					cout << endl;
 				}
 				cout << endl;
