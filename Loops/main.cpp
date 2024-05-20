@@ -6,8 +6,8 @@ using namespace std;
 //#define WHILE_2
 //#define WHILE_3
 //#define WHILE_4
-#define ASCII
-//#define STEPEN
+//#define ASCII
+//#define POWER
 void main()
 {
 	setlocale(LC_ALL, "");
@@ -37,7 +37,7 @@ void main()
 #ifdef WHILE_3
 	int i = 0;
 	int n; //число введённое с клавиатуры
-	int b; //факториал
+	int b = 0; //факториал
 	int c;
 	cout << "\t\t\t\t\tФакториал числа" << endl;
 	cout << "Введите число: "; cin >> n;
@@ -75,7 +75,6 @@ void main()
 	cout << "\t\t\t\t\tВозведение числа в степень" << endl;
 	cout << "Введите число: ";  cin >> a;
 	cout << "Введите степень: "; cin >> n;
-
 	d = a * a;
 	c = 0;
 	e = 0;
@@ -92,7 +91,6 @@ void main()
 		cout << e << endl;
 	}
 #endif
-
 #ifdef ASCII
 	cout << "Таблица ASCII - символов" << endl;
 	setlocale(LC_ALL, "C");//Включаем кодировку по умолчанию
@@ -105,7 +103,7 @@ void main()
 	}
 	cout << endl;
 #endif	
-#ifdef STEPEN
+#ifdef POWER
 	double a; // основание степени
 	int n; // показатель степени
 	double N = 1; //степень
@@ -121,6 +119,4 @@ void main()
 		N *= a;
 	cout << N << endl;
 #endif
-	
-		
 }
