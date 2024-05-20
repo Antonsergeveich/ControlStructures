@@ -6,17 +6,17 @@ using std::cout;
 using std::endl;
 
 //#define SQUARE
+//#define TRIANGLE
 //#define TRIANGLE_1
 //#define TRIANGLE_2
 //#define TRIANGLE_3
-//#define TRIANGLE_31
 //#define TRIANGLE_4
-//#define TRIANGLE_41
+//#define TRIANGLE_5
 //#define ROMBUS
 //#define ROMBUS_1
 //#define ROMBUS_2
 //#define PLUS_MINUS
-//#define PLUS_MINUS_2
+//#define PLUS_MINUS_1
 //#define RAZMER_DOSKI
 #define HARD_CHESS
 //#define PASCAL_IS_TRIANGLE
@@ -39,10 +39,21 @@ void main()
 	}
 	cout << endl;
 #endif 
-#ifdef TRIANGLE_1
+#ifdef TRIANGLE
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; j <= i; j++)
+		{
+			cout << "* ";
+		}
+		cout << endl;
+	}
+#endif 
+#ifdef TRIANGLE_1
+	cout << endl;
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = i; j < n; j++)
 		{
 			cout << "* ";
 		}
@@ -58,24 +69,13 @@ void main()
 			cout << "* ";
 		}
 		cout << endl;
-	}
-#endif 
-#ifdef TRIANGLE_3
-	cout << endl;
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = i; j < n; j++)
-		{
-			cout << "* ";
-		}
-		cout << endl;
 		for (int x = 0; x <= i; x++)
 		{
 			cout << "  ";
 		}
 	}
 #endif 
-#ifdef TRIANGLE_31
+#ifdef TRIANGLE_3
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; j < i; j++) cout << "  ";
@@ -100,7 +100,7 @@ void main()
 	}
 	cout << endl;
 #endif 
-#ifdef TRIANGLE_41
+#ifdef TRIANGLE_5
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = i; j < n - 1; j++) cout << "  ";
@@ -188,7 +188,7 @@ void main()
 		cout << w << endl;
 	}
 #endif  
-#ifdef PLUS_MINUS_2
+#ifdef PLUS_MINUS_1
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; j < n; j++)
